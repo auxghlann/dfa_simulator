@@ -52,8 +52,6 @@ public class Main {
             System.out.print("Enter the input string: ");
             input = in.next();
 
-            int[] result = dfa_obj.convert_input_to_numeric(input, alpha);
-
             boolean is_accepted = dfa_obj.validate_string(input, alpha, matrix, fin_states);
 
             if (is_accepted) {
