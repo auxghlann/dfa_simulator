@@ -63,12 +63,9 @@ public class Main {
                 System.out.println("Remarks: Rejected");
             }
 
-            System.out.print("Do you want to try another string? Y/N: ");
+            System.out.print("Do you want to try another string? <any key>/N: ");
             char choice = in.next().charAt(0);
-            if (choice == 'y' || choice == 'Y') {
-                continue;
-            }
-            else {
+            if (choice == 'n' || choice == 'N') {
                 loopState = false;
             }
         }
