@@ -62,10 +62,6 @@ public class DFA {
         return converted_input;
     }
 
-//    public static boolean next_row() {
-//        return false;
-//    }
-
     public void fill_matrix() {
 
         this.matrix = new int[states][input_alpha.length];
@@ -80,7 +76,7 @@ public class DFA {
         }
     }
 
-    public void display_matrix() throws Exception {
+    public void display_matrix() {
 
         if (matrix == null) {
             throw new NullPointerException("Matrix should not be empty!");

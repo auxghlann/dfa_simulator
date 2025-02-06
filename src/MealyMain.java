@@ -1,4 +1,3 @@
-import dfa.DFA;
 import mealy_machine.Mealy;
 
 import java.util.Scanner;
@@ -10,7 +9,7 @@ public class MealyMain {
         // declare var to be used
         int states;
         String[] input_alpha, output_alpha;
-        String[] init_states, fin_states;
+        String[] init_states;
 //        int[][] matrix;
         String input;
 

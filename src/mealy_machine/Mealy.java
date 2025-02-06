@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Mealy extends DFA {
 
-    private String mealy_output;
     private final String[] output_alpha;
     private String[][] output_matrix;
 //    private ArrayList<ArrayList<String>> list_of_outputs;
@@ -86,7 +85,8 @@ public class Mealy extends DFA {
             output_builder.append(this.output_matrix[curr_row_pointer][converted_input[i]]);
         }
 
-        return this.mealy_output = output_builder.toString();
+        String mealy_output;
+        return mealy_output = output_builder.toString();
     }
 
     @Override
