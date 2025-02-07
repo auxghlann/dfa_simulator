@@ -85,8 +85,7 @@ public class Mealy extends DFA {
             output_builder.append(this.output_matrix[curr_row_pointer][converted_input[i]]);
         }
 
-        String mealy_output;
-        return mealy_output = output_builder.toString();
+        return output_builder.toString();
     }
 
     @Override
