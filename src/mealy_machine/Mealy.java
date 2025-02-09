@@ -9,9 +9,9 @@ public class Mealy extends DFA {
     private String[][] output_matrix;
 //    private ArrayList<ArrayList<String>> list_of_outputs;
 
-    public Mealy(int states, String[] alpha, String[] init_states,
+    public Mealy(int states, String[] input_alpha,
                     String[] output_alpha) {
-        super(states, alpha, init_states, null);
+        super(states, input_alpha);
         this.output_alpha = output_alpha;
     }
 
@@ -33,7 +33,7 @@ public class Mealy extends DFA {
 //            ArrayList<String> outputs = new ArrayList<>();
 
             for (int j = 0; j < super.matrix[1].length; j++) {
-                System.out.print("Transition (" +  i + ","+ super.input_alpha[j] + "): ");
+                System.out.print("Transition (q" +  i + ","+ super.input_alpha[j] + "): ");
                 super.matrix[i][j] = in.nextInt();
                 System.out.print("Output: ");
                 String output = in.next();
