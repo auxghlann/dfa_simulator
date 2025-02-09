@@ -30,11 +30,11 @@ public class MealyMain {
         // Create matrix using states (row) and len of alpha (col)
 //        matrix = new int[states][alpha.length];
 
-        System.out.print("Enter the initial state/s (sep by comma): ");
-        init_states = in.next().split(",");
+//        System.out.print("Enter the initial state/s (sep by comma): ");
+//        init_states = in.next().split(",");
 
         // Initialize Mealy Machine
-        Mealy mealy = new Mealy(states, input_alpha, init_states, output_alpha);
+        Mealy mealy = new Mealy(states, input_alpha, output_alpha);
 
         mealy.fill_matrix();
 
