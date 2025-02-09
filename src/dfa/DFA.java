@@ -5,8 +5,8 @@ public class DFA {
 
     protected final int states;
     protected final String[] input_alpha;
-    protected final String[] init_states;
-    protected final String[] fin_states;
+    protected String[] init_states;
+    protected String[] fin_states;
     protected int[][] matrix;
 //    protected String input;
 
@@ -16,6 +16,13 @@ public class DFA {
         this.init_states = init_states;
         this.fin_states = fin_states;
     }
+
+    public DFA(int states, String[] input_alpha) {
+        this.states = states;
+        this.input_alpha = input_alpha;
+        this.init_states = new String[]{"0"};
+    }
+
 
     protected boolean check_if_initial_state(String state) {
 
