@@ -26,16 +26,16 @@ public class DFA {
 
     protected boolean check_if_initial_state(String state) {
 
-        for (String a : this.init_states) {
-            if (state.equals(a)) return true;
+        for (int i = 0; i < this.init_states.length; i++) {
+            if (state.equals(this.init_states[i])) return true;
         }
         return false;
     }
 
     protected boolean check_if_final_state(String state) {
 
-        for (String a : this.fin_states) {
-            if (state.equals(a)) return true;
+        for (int i = 0; i < this.fin_states.length; i++) {
+            if (state.equals(this.fin_states[i])) return true;
         }
         return false;
     }
@@ -73,11 +73,12 @@ public class DFA {
 
         this.matrix = new int[states][input_alpha.length];
         Scanner in = new Scanner(System.in);
-        System.out.printf("Row: %d \nCol: %d\n", this.matrix.length, this.matrix[0].length);
+        System.out.println("Row: "+ this.matrix.length);
+        System.out.println("Col: " + this.matrix[0].length);
 
         for (int i = 0; i < this.matrix.length; i++) {
             for (int j = 0; j < this.matrix[1].length; j++) {
-                System.out.printf("Transition (" +  i + "," + this.input_alpha[j] +"): ");
+                System.out.print("Transition (" +  i + "," + this.input_alpha[j] +"): ");
                 this.matrix[i][j] = in.nextInt();
             }
         }
