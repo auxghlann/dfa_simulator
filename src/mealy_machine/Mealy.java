@@ -29,6 +29,8 @@ public class Mealy extends DFA {
         System.out.println("Row: "+ super.matrix.length);
         System.out.println("Col: " + super.matrix[0].length);
 
+
+        System.out.println("-- Enter the transition and its respective output -- ");
         for (int i = 0; i < super.matrix.length; i++) {
 //            ArrayList<String> outputs = new ArrayList<>();
 

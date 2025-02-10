@@ -29,11 +29,13 @@ public class Moore extends DFA {
         System.out.println("Row: "+ super.matrix.length);
         System.out.println("Col: " + super.matrix[0].length);
 
-
+        System.out.println("-- Enter the output of every states -- ");
         for (int i = 0; i < super.states; i++) {
             System.out.print("Output q" + i + ": ");
             this.state_output[i] = in.next();
         }
+
+        System.out.println("-- Enter the transition of every states-- ");
         for (int i = 0; i < super.matrix.length; i++) {
 
             for (int j = 0; j < super.matrix[1].length; j++) {
